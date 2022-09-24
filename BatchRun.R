@@ -1,0 +1,6 @@
+sink("SampleCode1Output.out", append=FALSE, split=TRUE) 
+pdf("SampleCode1Output.pdf")
+source("SampleCode1.R")
+sink()
+unlink("SampleCode1Output.out")
+dev.off()
